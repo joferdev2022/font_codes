@@ -13,6 +13,16 @@ class HomePage extends StatelessWidget {
       body: const Center(
         child: Text('HAO COMO HAS ESTAO'),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Inicio'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.location_on), label: 'Lugares'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle), label: 'Perfil'),
+        ],
+      ),
     );
   }
 }
